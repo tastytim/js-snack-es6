@@ -25,7 +25,7 @@ let bycicles = [
 
 
 let min ;
-var tmp = bycicles[0].peso;
+const tmp = bycicles[0].peso;
 
 
 for(let {nome, peso} of bycicles){
