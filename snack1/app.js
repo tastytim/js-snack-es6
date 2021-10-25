@@ -24,9 +24,17 @@ let bycicles = [
 
 
 
-let [nome, peso] = bycicles;
+let min ;
+var tmp = bycicles[0].peso;
 
-let min = bycicles.reduce((prev, curr) => prev.peso < curr.peso ? prev : curr);
+
+for(let {nome, peso} of bycicles){
+    if(peso < tmp){
+        min = {nome, peso};
+    };
+}
+
+// let min = bycicles.reduce((prev, curr) => prev.peso < curr.peso ? prev : curr);
 console.log(min);
 
 selectcontainerMin.innerHTML =
